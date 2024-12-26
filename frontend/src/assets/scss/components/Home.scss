@@ -1,13 +1,9 @@
 .home {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
+    align-items: center;
+    position: relative;
     flex-grow: 1;
+    line-height: 100%;
 
     .background-video {
         position: fixed; 
@@ -19,7 +15,9 @@
         z-index: -1; 
     }
 
-    .home-title {
+    .home-text {
+        margin: 0;
+        font-size: 18px;
         color: white;
     }
 }
