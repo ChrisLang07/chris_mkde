@@ -3,7 +3,7 @@ import '../assets/scss/components/Footer.scss';
 
 export default function Footer() {
     return (
-        <footer className="container">
+        <footer>
             <span className='footer-text'>Christophe LANGLOIS | Copyright 2024</span>
         </footer>
     )

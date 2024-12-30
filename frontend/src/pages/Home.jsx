@@ -1,4 +1,5 @@
 import Video from '../components/Video';
+import Content from '../components/Content';
 import '../assets/scss/components/Home.scss';
 
 export default function Home() {
@@ -17,10 +18,12 @@ Curae parturient sagittis urna vivamus nascetur. Est bibendum aliquet class curs
     )
 
     return (
-        <div className="container home">
-            <Video />
-            <p className='home-text'>{homeText}</p>
+      <section className='home'>
+        <div className="home-background">
+          <Video />
+          <p className="home-text">{homeText}</p>
         </div>
-
+        <Content />
+      </section>
     )
 }
