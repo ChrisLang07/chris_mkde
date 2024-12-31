@@ -49,7 +49,7 @@ export default function Header() {
       <header className={`${isScroll ? "isScroll" : ""}`}>
         <div className='header-content container'>
           <h1 className="header-title">
-            Christophe LANGLOIS | Maseur-kinésithérapeute
+            ChrisLang | MKDE
           </h1>
           <div className="header-menu">
             <nav
