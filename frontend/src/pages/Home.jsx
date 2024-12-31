@@ -9,7 +9,7 @@ export default function Home() {
       <section className='home'>
         <div className="home-background">
           <Video video={mainVideo}/>
-          <h1 className='main-title'> Christophe LANGLOIS | Masseur-kinésithérapeute DE</h1>>
+          <h1 className='main-title'> Christophe LANGLOIS | <br />Masseur-kinésithérapeute DE</h1>
         </div>
         <Content />
       </section>
