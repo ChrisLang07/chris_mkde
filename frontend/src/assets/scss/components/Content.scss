@@ -1,61 +1,67 @@
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+#content-section {
     height: 100svh;
-    text-align: center;
-    background-color: grey;
-    border: 10px solid rgba(0, 0, 0, .85);
 
-    .content-pic {
-        width: 15svw;
-        height: 70svh;
-        border: 2px solid white;
-        transition: transform 0.3s ease;  // Transition par défaut pour le scroll vers le haut (rapide)
-    }
-
-    .slow-scroll {
-        transition: transform 3s ease;  // Transition lente pour le scroll vers le bas
-    }
-
-    .fast-scroll {
-        transition: transform 3s ease;  // Transition rapide pour le scroll vers le haut
-    }
-
-    div.content-pic:nth-child(1) {
-        transform: translateX(100svw);  // Position hors de l'écran à droite
-
-        &.slow-scroll {
-            transform: translateX(0);  // Position normale quand on scroll vers le bas
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 50px;
+        text-align: center;
+        background-color: grey;
+        border: 10px solid rgba(0, 0, 0, .85);
+    
+        .content-pic {
+            width: 15svw;
+            height: 70svh;
+            border: 2px solid white;
+            transition: transform 0.3s ease;  // Transition par défaut pour le scroll vers le haut (rapide)
         }
-
-        &.fast-scroll {
-            transform: translateX(100svw);  // Sort de l'écran rapidement quand on scroll vers le haut
+    
+        .slow-scroll {
+            transition: transform 3s ease;  // Transition lente pour le scroll vers le bas
+        }
+    
+        .fast-scroll {
+            transition: transform 3s ease;  // Transition rapide pour le scroll vers le haut
+        }
+    
+        div.content-pic:nth-child(1) {
+            transform: translateX(100svw);  // Position hors de l'écran à droite
+    
+            &.slow-scroll {
+                transform: translateX(0);  // Position normale quand on scroll vers le bas
+            }
+    
+            &.fast-scroll {
+                transform: translateX(100svw);  // Sort de l'écran rapidement quand on scroll vers le haut
+            }
+        }
+    
+        div.content-pic:nth-child(2) {
+            transform: translateX(200svw);  // Position hors de l'écran à droite
+    
+            &.slow-scroll {
+                transform: translateX(0);  // Position normale quand on scroll vers le bas
+            }
+    
+            &.fast-scroll {
+                transform: translateX(200svw);  // Sort de l'écran rapidement quand on scroll vers le haut
+            }
+        }
+    
+        div.content-pic:nth-child(3) {
+            transform: translateX(300svw);  // Position hors de l'écran à droite
+    
+            &.slow-scroll {
+                transform: translateX(0);  // Position normale quand on scroll vers le bas
+            }
+    
+            &.fast-scroll {
+                transform: translateX(300svw);  // Sort de l'écran rapidement quand on scroll vers le haut
+            }
         }
     }
-
-    div.content-pic:nth-child(2) {
-        transform: translateX(200svw);  // Position hors de l'écran à droite
-
-        &.slow-scroll {
-            transform: translateX(0);  // Position normale quand on scroll vers le bas
-        }
-
-        &.fast-scroll {
-            transform: translateX(200svw);  // Sort de l'écran rapidement quand on scroll vers le haut
-        }
-    }
-
-    div.content-pic:nth-child(3) {
-        transform: translateX(300svw);  // Position hors de l'écran à droite
-
-        &.slow-scroll {
-            transform: translateX(0);  // Position normale quand on scroll vers le bas
-        }
-
-        &.fast-scroll {
-            transform: translateX(300svw);  // Sort de l'écran rapidement quand on scroll vers le haut
-        }
-    }
+    
 }
+

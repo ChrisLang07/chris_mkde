@@ -1,78 +1,118 @@
 import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import '../assets/scss/Main.scss';
 import '../assets/scss/components/Header.scss';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [isScroll, setIsScroll] = useState(false);
+    const [isActive, setIsActive] = useState(""); 
 
+    
     const handleScroll = () => {
         if (window.scrollY > 100) {
             setIsScroll(true);
         } else {
-            setIsScroll(false)
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
+            setIsScroll(false);
         }
 
-    }, []);
-
-    // Fonction pour basculer l'état du menu (ouvrir ou fermer)
-    const toggleMenu = (event) => {
-        event.stopPropagation();  // Empêche la propagation du clic
-        setIsOpen(prevState => !prevState);  // Change l'état du menu (ouvrir ou fermer)
+        handleVisibility(); 
     };
 
-    // Fonction pour fermer le menu si on clique en dehors
+    const handleVisibility = () => {
+        const homeSection = document.getElementById('home-section');
+        const officeSection = document.getElementById('content-section');
+        const contactSection = document.getElementById('contact-section');
+
+        
+        if (homeSection && officeSection && contactSection) {
+            if (homeSection.getBoundingClientRect().top <= window.innerHeight &&
+                homeSection.getBoundingClientRect().bottom >= 0) {
+                setIsActive("home");
+            } else if (officeSection.getBoundingClientRect().top <= window.innerHeight &&
+                officeSection.getBoundingClientRect().bottom >= 0) {
+                setIsActive("office");
+            } else if (contactSection.getBoundingClientRect().top <= window.innerHeight &&
+                contactSection.getBoundingClientRect().bottom >= 0) {
+                setIsActive("contact");
+            }
+        }
+    };
+
+    
+    useEffect(() => {
+        handleVisibility();
+    }, []); 
+
+   
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll); 
+        return () => {
+            window.removeEventListener('scroll', handleScroll); 
+        };
+    }); 
+    
+    const toggleMenu = (event) => {
+        event.stopPropagation();  
+        setIsOpen(prevState => !prevState);  
+    };
+
+  
     const handleClickOutside = (event) => {
-        // Si le clic est en dehors du menu ou du hamburger, on ferme le menu
         if (!event.target.closest('.header-menu') && !event.target.closest('.menu-hamburger')) {
             setIsOpen(false);
         }
     };
 
-    // Utilisation de useEffect pour ajouter et supprimer l'écouteur d'événements global
     useEffect(() => {
-        window.addEventListener('click', handleClickOutside);  // Ajoute l'écouteur pour détecter les clics en dehors
+        window.addEventListener('click', handleClickOutside); 
         return () => {
-            window.removeEventListener('click', handleClickOutside);  // Nettoyage de l'écouteur
+            window.removeEventListener('click', handleClickOutside); 
         };
     }, []);
 
+ 
+    const handleClickLink = (id) => {
+        setIsActive(id);
+    };
+
     return (
-      <header className={`${isScroll ? "isScroll" : ""}`}>
-        <div className='header-content container'>
-          <h1 className="header-title">
-            ChrisLang | MKDE
-          </h1>
-          <div className="header-menu">
-            <nav
-              className={`menu-hamburger ${isOpen ? "isOpen" : ""}`}
-              onClick={toggleMenu} // Basculer l'état du menu au clic sur le hamburger
-            >
-              <div className="menu-hamburger--bar"></div>
-              <div className="menu-hamburger--bar"></div>
-              <div className="menu-hamburger--bar"></div>
-            </nav>
-            <nav className={`menu ${isOpen ? "isVisible" : ""}`}>
-              <NavLink className="menu-link" to="/">
-                Home
-              </NavLink>
-              <NavLink className="menu-link" to="/office">
-                Office
-              </NavLink>
-              <NavLink className="menu-link" to="/contact">
-                Contact
-              </NavLink>
-            </nav>
-          </div>
-        </div>
-      </header>
+        <header className={`${isScroll ? "isScroll" : ""}`}>
+            <div className="header-content container">
+                <h1 className="header-title">ChrisLang | MKDE</h1>
+                <div className="header-menu">
+                    <nav
+                        className={`menu-hamburger ${isOpen ? "isOpen" : ""}`}
+                        onClick={toggleMenu}
+                    >
+                        <div className="menu-hamburger--bar"></div>
+                        <div className="menu-hamburger--bar"></div>
+                        <div className="menu-hamburger--bar"></div>
+                    </nav>
+                    <nav className={`menu ${isOpen ? "isVisible" : ""}`}>
+                        <a
+                            href="#home-section"
+                            className={`menu-link ${isActive === "home" ? "active" : ""}`}
+                            onClick={() => handleClickLink("home")}
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="#content-section"
+                            className={`menu-link ${isActive === "office" ? "active" : ""}`}
+                            onClick={() => handleClickLink("office")}
+                        >
+                            Office
+                        </a>
+                        <a
+                            href="#contact-section"
+                            className={`menu-link ${isActive === "contact" ? "active" : ""}`}
+                            onClick={() => handleClickLink("contact")}
+                        >
+                            Contact  
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
     );
 }
