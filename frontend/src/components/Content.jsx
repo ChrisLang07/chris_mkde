@@ -2,24 +2,24 @@ import { useEffect, useState } from 'react';
 import '../assets/scss/components/Content.scss';
 
 export default function Content() {
-    const [isScrollingDown, setIsScrollingDown] = useState(false);  // Pour savoir si on scroll vers le bas
+    const [isScrollingDown, setIsScrollingDown] = useState(false);
     let lastScroll = 0;
 
     const handleScroll = () => {
         if (window.scrollY > lastScroll) {
-            setIsScrollingDown(true);  // Scroll vers le bas
+            setIsScrollingDown(true);
         } else {
-            setIsScrollingDown(false);  // Scroll vers le haut
+            setIsScrollingDown(false);
         }
-        lastScroll = window.scrollY;  // On met à jour la dernière position du scroll
+        lastScroll = window.scrollY;
     };
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);  // Ajouter un écouteur d'événements pour le scroll
+        window.addEventListener('scroll', handleScroll);
         return () => {
-            window.removeEventListener('scroll', handleScroll);  // Nettoyage quand le composant est détruit
+            window.removeEventListener('scroll', handleScroll);
         };
-    });  // Le useEffect se lance une seule fois
+    });
 
     return (
         <div className="content">

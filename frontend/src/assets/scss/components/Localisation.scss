@@ -1,0 +1,12 @@
+#localisation-section {
+    height: 100svh;
+    position: relative;
+    
+    .localisation-text {
+            position: absolute;
+            font-size: 20px;;
+            top: 50%;
+            left: 50%;
+            color: white;
+        }
+}

@@ -1,5 +1,6 @@
 #content-section {
     height: 100svh;
+    background-color: rgba(0, 0, 0, 0.85);
 
     .content {
         display: flex;
@@ -8,57 +9,55 @@
         height: 100%;
         gap: 50px;
         text-align: center;
-        background-color: grey;
-        border: 10px solid rgba(0, 0, 0, .85);
     
         .content-pic {
             width: 15svw;
             height: 70svh;
             border: 2px solid white;
-            transition: transform 0.3s ease;  // Transition par défaut pour le scroll vers le haut (rapide)
+            transition: transform 0.3s ease;  
         }
     
         .slow-scroll {
-            transition: transform 3s ease;  // Transition lente pour le scroll vers le bas
+            transition: transform 3s ease-in-out; 
         }
     
         .fast-scroll {
-            transition: transform 3s ease;  // Transition rapide pour le scroll vers le haut
+            transition: transform 2s ease-out;  
         }
     
         div.content-pic:nth-child(1) {
-            transform: translateX(100svw);  // Position hors de l'écran à droite
+            transform: translateX(100svw); 
     
             &.slow-scroll {
-                transform: translateX(0);  // Position normale quand on scroll vers le bas
+                transform: translateX(0);  
             }
     
             &.fast-scroll {
-                transform: translateX(100svw);  // Sort de l'écran rapidement quand on scroll vers le haut
+                transform: translateX(100svw); 
             }
         }
     
         div.content-pic:nth-child(2) {
-            transform: translateX(200svw);  // Position hors de l'écran à droite
+            transform: translateX(200svw);  
     
             &.slow-scroll {
-                transform: translateX(0);  // Position normale quand on scroll vers le bas
+                transform: translateX(0);  
             }
     
             &.fast-scroll {
-                transform: translateX(200svw);  // Sort de l'écran rapidement quand on scroll vers le haut
+                transform: translateX(200svw); 
             }
         }
     
         div.content-pic:nth-child(3) {
-            transform: translateX(300svw);  // Position hors de l'écran à droite
+            transform: translateX(300svw);  
     
             &.slow-scroll {
-                transform: translateX(0);  // Position normale quand on scroll vers le bas
+                transform: translateX(0);  
             }
     
             &.fast-scroll {
-                transform: translateX(300svw);  // Sort de l'écran rapidement quand on scroll vers le haut
+                transform: translateX(300svw); 
             }
         }
     }

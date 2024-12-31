@@ -21,6 +21,7 @@ export default function Header() {
     const handleVisibility = () => {
         const homeSection = document.getElementById('home-section');
         const officeSection = document.getElementById('content-section');
+        const localisationSection = document.getElementById('localisation-section');
         const contactSection = document.getElementById('contact-section');
 
         
@@ -31,7 +32,10 @@ export default function Header() {
             } else if (officeSection.getBoundingClientRect().top <= window.innerHeight &&
                 officeSection.getBoundingClientRect().bottom >= 0) {
                 setIsActive("office");
-            } else if (contactSection.getBoundingClientRect().top <= window.innerHeight &&
+            } else if (localisationSection.getBoundingClientRect().top <= window.innerHeight &&
+                localisationSection.getBoundingClientRect().bottom >= 0) {
+                    setIsActive("localisation");
+            }else if (contactSection.getBoundingClientRect().top <= window.innerHeight &&
                 contactSection.getBoundingClientRect().bottom >= 0) {
                 setIsActive("contact");
             }
@@ -102,6 +106,12 @@ export default function Header() {
                             onClick={() => handleClickLink("office")}
                         >
                             Office
+                        </a>
+                        <a href="#localisation-section"
+                            className={`menu-link ${isActive === "localisation" ? "active" : ""}`}
+                            onClick={() => handleClickLink("localisation")}
+                        >
+                            Localisation
                         </a>
                         <a
                             href="#contact-section"
