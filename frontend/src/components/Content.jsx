@@ -19,7 +19,7 @@ export default function Content() {
         return () => {
             window.removeEventListener('scroll', handleScroll);  // Nettoyage quand le composant est détruit
         };
-    }, []);  // Le useEffect se lance une seule fois
+    });  // Le useEffect se lance une seule fois
 
     return (
         <div className="content">
