@@ -1,8 +1,9 @@
 import Video from '../components/Video';
 import mainVideo from '../assets/movies/massage_2.mp4';
 import Content from '../components/Content';
-import Localisation from '../components/Localisation';
+import Map from '../components/Map';
 import Form from '../components/Form';
+import BackTotop from '../components/BackToTop';
 import '../assets/scss/components/Home.scss';
 
 export default function Home() {
@@ -20,12 +21,13 @@ export default function Home() {
         <div id="content-section">
           <Content />
         </div>
-        <div id="localisation-section">
-          <Localisation />
+        <div id="map-section">
+          <Map />
         </div>
         <div id="contact-section">
           <Form />
         </div>
+        <BackTotop />
       </section>
     );
 }

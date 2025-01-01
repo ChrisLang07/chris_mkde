@@ -21,7 +21,7 @@ export default function Header() {
     const handleVisibility = () => {
         const homeSection = document.getElementById('home-section');
         const officeSection = document.getElementById('content-section');
-        const localisationSection = document.getElementById('localisation-section');
+        const mapSection = document.getElementById('map-section');
         const contactSection = document.getElementById('contact-section');
 
         
@@ -32,9 +32,9 @@ export default function Header() {
             } else if (officeSection.getBoundingClientRect().top <= window.innerHeight &&
                 officeSection.getBoundingClientRect().bottom >= 0) {
                 setIsActive("office");
-            } else if (localisationSection.getBoundingClientRect().top <= window.innerHeight &&
-                localisationSection.getBoundingClientRect().bottom >= 0) {
-                    setIsActive("localisation");
+            } else if (mapSection.getBoundingClientRect().top <= window.innerHeight &&
+                mapSection.getBoundingClientRect().bottom >= 0) {
+                    setIsActive("map");
             }else if (contactSection.getBoundingClientRect().top <= window.innerHeight &&
                 contactSection.getBoundingClientRect().bottom >= 0) {
                 setIsActive("contact");
@@ -77,6 +77,7 @@ export default function Header() {
  
     const handleClickLink = (id) => {
         setIsActive(id);
+        setIsOpen(false);
     };
 
     return (
@@ -107,11 +108,11 @@ export default function Header() {
                         >
                             Office
                         </a>
-                        <a href="#localisation-section"
-                            className={`menu-link ${isActive === "localisation" ? "active" : ""}`}
-                            onClick={() => handleClickLink("localisation")}
+                        <a href="#map-section"
+                            className={`menu-link ${isActive === "map" ? "active" : ""}`}
+                            onClick={() => handleClickLink("map")}
                         >
-                            Localisation
+                            map
                         </a>
                         <a
                             href="#contact-section"
