@@ -1,0 +1,28 @@
+.content-text {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	
+	font-size: 18px;
+
+    h2, h3, p, ul {
+        color: white;
+        font-family: "Roboto", serif;
+    }
+
+    p, ul {
+        font-size: 18px;
+    }
+
+    p {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+

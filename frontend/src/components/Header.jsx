@@ -20,18 +20,18 @@ export default function Header() {
 
     const handleVisibility = () => {
         const homeSection = document.getElementById('home-section');
-        const officeSection = document.getElementById('content-section');
+        const practiceSection = document.getElementById('content-section');
         const mapSection = document.getElementById('map-section');
         const contactSection = document.getElementById('contact-section');
 
         
-        if (homeSection && officeSection && contactSection) {
+        if (homeSection && practiceSection && contactSection) {
             if (homeSection.getBoundingClientRect().top <= window.innerHeight &&
                 homeSection.getBoundingClientRect().bottom >= 0) {
                 setIsActive("home");
-            } else if (officeSection.getBoundingClientRect().top <= window.innerHeight &&
-                officeSection.getBoundingClientRect().bottom >= 0) {
-                setIsActive("office");
+            } else if (practiceSection.getBoundingClientRect().top <= window.innerHeight &&
+                practiceSection.getBoundingClientRect().bottom >= 0) {
+                setIsActive("practice");
             } else if (mapSection.getBoundingClientRect().top <= window.innerHeight &&
                 mapSection.getBoundingClientRect().bottom >= 0) {
                     setIsActive("map");
@@ -103,10 +103,10 @@ export default function Header() {
                         </a>
                         <a
                             href="#content-section"
-                            className={`menu-link ${isActive === "office" ? "active" : ""}`}
-                            onClick={() => handleClickLink("office")}
+                            className={`menu-link ${isActive === "practice" ? "active" : ""}`}
+                            onClick={() => handleClickLink("practice")}
                         >
-                            Office
+                            practice
                         </a>
                         <a href="#map-section"
                             className={`menu-link ${isActive === "map" ? "active" : ""}`}

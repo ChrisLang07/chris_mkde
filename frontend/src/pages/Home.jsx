@@ -1,6 +1,7 @@
 import Video from '../components/Video';
 import mainVideo from '../assets/movies/massage_2.mp4';
 import Content from '../components/Content';
+import ContentText from '../components/ContentText';
 import Map from '../components/Map';
 import Form from '../components/Form';
 import BackTotop from '../components/BackToTop';
@@ -20,6 +21,7 @@ export default function Home() {
         </div>
         <div id="content-section">
           <Content />
+          <ContentText />
         </div>
         <div id="map-section">
           <Map />
