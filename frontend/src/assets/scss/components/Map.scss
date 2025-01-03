@@ -3,14 +3,39 @@
     position: relative;
 
     .map-content {
-        
+        position: relative;
     }
     
-    .map-text {
+    .map-content--text {
             position: absolute;
-            font-size: 20px;;
+            font-size: 20px;
+            width: 50%;
+            margin: 0;
             top: 50%;
-            left: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+    }
+
+    .map-content--iframe-container {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 50%;
+        text-align: center;
+        height: 50%;
+        transform: translateY(-50%);
+
+        .umap {
+            width: 80%;
+            height: 90%;
+            border: 10px solid rgba(0, 0, 0, 0.85)
+        }
+
+        .umap-link {
+            text-decoration: none;
             color: white;
         }
+    }
 }

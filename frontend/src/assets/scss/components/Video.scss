@@ -1,7 +1,7 @@
 .background-video {
     box-sizing: border-box;
     width: 100vw; 
-    height: 100%; 
+    height: 100svh; 
     object-fit: cover;
     filter: brightness(70%) saturate(50%) contrast(150%);
 }
