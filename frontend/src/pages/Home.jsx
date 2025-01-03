@@ -19,7 +19,7 @@ export default function Home() {
             Masseur-kinésithérapeute DE
           </h1>
         </div>
-        <div id="content-section">
+        <div id="content-section" className='container'>
           <Content />
           <ContentText />
         </div>

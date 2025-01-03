@@ -25,16 +25,33 @@ export default function Content() {
     });
 
     return (
-        <div className="content">
-            <div className={`content-pic ${isScrollingDown ? 'slow-scroll' : 'fast-scroll'}`}>
-                <img className="content-img" src={Practice} alt=" Exterior view of the physiotherapy practice" title="Exterior view of the physiotherapy practice" />
-            </div>
-            <div className={`content-pic ${isScrollingDown ? 'slow-scroll' : 'fast-scroll'}`}>
-            <img className="content-img" src={Door} alt="" title="" />
-            </div>
-            <div className={`content-pic ${isScrollingDown ? 'slow-scroll' : 'fast-scroll'}`}>
-            <img className="content-img" src={Inside} alt="" title="" />
-            </div>
+      <div className="content">
+        <div
+          className={`content-pic ${
+            isScrollingDown ? "slow-scroll" : "fast-scroll"
+          }`}
+        >
+          <img
+            className="content-img"
+            src={Practice}
+            alt=" Exterior view of the physiotherapy practice"
+            title="Exterior view of the physiotherapy practice"
+          />
         </div>
+        <div
+          className={`content-pic ${
+            isScrollingDown ? "slow-scroll" : "fast-scroll"
+          }`}
+        >
+          <img className="content-img" src={Door} alt="" title="" />
+        </div>
+        <div
+          className={`content-pic ${
+            isScrollingDown ? "slow-scroll" : "fast-scroll"
+          }`}
+        >
+          <img className="content-img" src={Inside} alt="" title="" />
+        </div>
+      </div>
     );
 }
