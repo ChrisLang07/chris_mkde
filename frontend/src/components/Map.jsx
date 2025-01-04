@@ -19,19 +19,35 @@ export default function Map() {
             <br />
             E-mail: christophe.langlois.mkde@gmail.com
           </p>
-          </div>
-          <div className="map-content--opening-hours">
-            <p><strong>Horaires d'ouverture :</strong></p>
-            <ul>
-              <li><strong>Lundi :</strong> 8:00 - 19:30</li>
-              <li><strong>Mardi :</strong> 8:00 - 19:30</li>
-              <li><strong>Mercredi :</strong> 8:00 - 19:30</li>
-              <li><strong>Jeudi :</strong> 8:00 - 19:30</li>
-              <li><strong>Vendredi :</strong> 8:00 - 19:30</li>
-              <li><strong>Samedi :</strong> Fermé</li>
-              <li><strong>Dimanche :</strong> Fermé</li>
-            </ul>
-          </div>
+        </div>
+        <div className="map-content--opening-hours">
+          <p>
+            <strong>Horaires d'ouverture :</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Lundi :</strong> 8:00 - 19:30
+            </li>
+            <li>
+              <strong>Mardi :</strong> 8:00 - 19:30
+            </li>
+            <li>
+              <strong>Mercredi :</strong> 8:00 - 19:30
+            </li>
+            <li>
+              <strong>Jeudi :</strong> 8:00 - 19:30
+            </li>
+            <li>
+              <strong>Vendredi :</strong> 8:00 - 19:30
+            </li>
+            <li>
+              <strong>Samedi :</strong> Fermé
+            </li>
+            <li>
+              <strong>Dimanche :</strong> Fermé
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="map-content--iframe-container">
@@ -40,11 +56,11 @@ export default function Map() {
           frameborder="0"
           allowfullscreen
           allow="geolocation"
-          src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_1159394?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
+          src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_1159714?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#17/46.78552/1.70604"
           title="Carte de localisation Christophe LANGLOIS MKDE"
         />
         <p>
-          <a className="umap-link" href="//umap.openstreetmap.fr/fr/map/carte-sans-nom_1159394?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true">
+          <a href="//umap.openstreetmap.fr/fr/map/carte-sans-nom_1159714?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#17/46.78552/1.70604">
             Voir en plein écran
           </a>
         </p>
