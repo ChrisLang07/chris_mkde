@@ -8,7 +8,7 @@ export default function Map() {
     <div className="map-content">
       <Video video={secondVideo} />
       <div className="map-content--infos">
-        <div className="map-content--adress">
+        <div className="map-content--address">
           <p className="map-content--text">
             4, Chemin de la Touche
             <br />
@@ -24,29 +24,36 @@ export default function Map() {
           <p>
             <strong>Horaires d'ouverture :</strong>
           </p>
-          <ul>
-            <li>
-              <strong>Lundi :</strong> 8:00 - 19:30
-            </li>
-            <li>
-              <strong>Mardi :</strong> 8:00 - 19:30
-            </li>
-            <li>
-              <strong>Mercredi :</strong> 8:00 - 19:30
-            </li>
-            <li>
-              <strong>Jeudi :</strong> 8:00 - 19:30
-            </li>
-            <li>
-              <strong>Vendredi :</strong> 8:00 - 19:30
-            </li>
-            <li>
-              <strong>Samedi :</strong> Fermé
-            </li>
-            <li>
-              <strong>Dimanche :</strong> Fermé
-            </li>
-          </ul>
+          <div className="opening-hours">
+            <div className="day">
+              <strong>Lundi :</strong>
+              <span className="hours">8:00 - 19:30</span>
+            </div>
+            <div className="day">
+              <strong>Mardi :</strong>
+              <span className="hours">8:00 - 19:30</span>
+            </div>
+            <div className="day">
+              <strong>Mercredi :</strong>
+              <span className="hours">8:00 - 19:30</span>
+            </div>
+            <div className="day">
+              <strong>Jeudi :</strong>
+              <span className="hours">8:00 - 19:30</span>
+            </div>
+            <div className="day">
+              <strong>Vendredi :</strong>
+              <span className="hours">8:00 - 19:30</span>
+            </div>
+            <div className="day">
+              <strong>Samedi :</strong>
+              <span className="hours">Fermé</span>
+            </div>
+            <div className="day">
+              <strong>Dimanche :</strong>
+              <span className="hours">Fermé</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -60,7 +67,10 @@ export default function Map() {
           title="Carte de localisation Christophe LANGLOIS MKDE"
         />
         <p>
-          <a href="//umap.openstreetmap.fr/fr/map/carte-sans-nom_1159714?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#17/46.78552/1.70604">
+          <a
+            className="umap-link"
+            href="//umap.openstreetmap.fr/fr/map/carte-sans-nom_1159714?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#17/46.78552/1.70604"
+          >
             Voir en plein écran
           </a>
         </p>

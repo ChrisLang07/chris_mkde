@@ -1,41 +1,87 @@
 #map-section {
-    height: 100svh;
+  height: 100svh;
+  position: relative;
+
+  .map-content {
     position: relative;
 
-    .map-content {
-        position: relative;
-    }
-    
-    .map-content--text {
-            position: absolute;
-            font-size: 20px;
-            width: 50%;
-            margin: 0;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            text-align: center;
-            color: white;
-    }
+    .map-content--infos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 20px;
+      font-family: "Roboto", serif;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 50%;
+      margin: 0;
 
-    .map-content--iframe-container {
-        position: absolute;
-        top: 50%;
-        right: 0;
+      .map-content--address, .map-content--opening-hours {
         width: 50%;
-        text-align: center;
-        height: 50%;
-        transform: translateY(-50%);
+      }
 
-        .umap {
-            width: 80%;
-            height: 90%;
-            border: 10px solid rgba(0, 0, 0, 0.85)
+      .map-content--opening-hours {
+        p, ul {
+          color: white;
         }
 
-        .umap-link {
-            text-decoration: none;
+        ul {
+          list-style: none; 
+          padding: 0;
+          margin: 0; 
+        }
+
+        .day {
+          display: flex;
+          justify-content: space-between; 
+          align-items: center;
+          width: 50%; 
+          margin-bottom: 10px; 
+
+          strong {
+            flex-shrink: 0; 
+            width: 120px; 
+            font-weight: bold;
             color: white;
+          }
+
+          .hours {
+            font-weight: normal;
+            color: white; 
+          }
         }
+      }
     }
+  }
+
+  .map-content--text {
+    color: white;
+  }
+
+  .map-content--iframe-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform: translateY(-50%);
+
+    .umap {
+        box-sizing: border-box;
+        width: 60%;
+        height: 90%;
+        border: 10px solid rgba(0, 0, 0, 0.85);
+    }
+
+    .umap-link {
+      text-decoration: none;
+      color: white;
+    }
+  }
 }
