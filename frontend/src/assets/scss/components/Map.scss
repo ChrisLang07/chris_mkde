@@ -1,5 +1,5 @@
 #map-section {
-  height: 100vh; 
+  height: 100vh;
   position: relative;
 
   .map-content {
@@ -9,20 +9,60 @@
       display: flex;
       justify-content: space-between;
       position: relative;
-      top: -100vh; 
-      transform: translateY(25vh); 
+      padding: 0 20px;
+      top: -100vh;
+      transform: translateY(25vh);
+
+      @media(max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        transform: translateY(10svh);
+      }
+
+      @media(max-width: 768px) {
+        transform: translateY(10svh);
+      }
+
       .map-content--infos,
       .map-content--iframe-container {
         width: 50%;
       }
 
+      .map-content--iframe-container {
+        
+        @media(max-width: 768px) {
+          width: 90%;
+        }
+      }
+
+      .map-content--infos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media(max-width: 1024px) {
+          gap: 0;
+        }
+
+        @media(max-width: 768px) {
+          width: 100%;
+          align-items: center;
+        }
+      }
+
       .map-content--text {
         color: white;
         font-family: "Bruno Ace SC", serif;
-        font-style: normal; 
+        font-style: normal;
+
+        @media(max-width: 768px) {
+          font-size: 14px;
+        }
       }
 
       .map-content--opening-hours {
+
         p,
         ul {
           color: white;
@@ -51,6 +91,14 @@
           .hours {
             font-weight: normal;
             color: white;
+          }
+
+          @media(max-width: 1024px) {
+            width: 100%;
+          }
+
+          @media(max-width: 768px) {
+            font-size: 14px;
           }
         }
       }
