@@ -1,3 +1,4 @@
+import { useEffect, useState, useRef } from "react";
 import Video from "./Video";
 import secondVideo from "../assets/movies/massage_3.mp4";
 import "../assets/scss/components/Map.scss";
@@ -14,13 +15,46 @@ export default function Map() {
     { day: "Dimanche", time: "Fermé" },
   ];
 
+  // Référence pour observer la section
+  const sectionRef = useRef(null);
+  
+  // État pour savoir si la section est visible ou non
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Créer un IntersectionObserver pour observer la visibilité de la section
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries; // On prend le premier (et seul) élément observé
+        setIsVisible(entry.isIntersecting); // Mettre à jour l'état si l'élément est visible
+      },
+      { threshold: 0.3 } // On déclenche quand 30% de la section est visible
+    );
+    
+    // Si la référence existe, on commence à observer
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    // Nettoyer l'observateur à la fin
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []); // Cette effet se lance une seule fois, au montage du composant
+
   return (
     <div className="map-content">
       {/* Vidéo */}
       <Video video={secondVideo} />
 
-      <div className="map-content--data container">
-        <div className="map-content--infos">
+      <div className={`map-content--data container ${isVisible ? "isVisible" : ""}`}>
+        {/* Section que l'on veut observer */}
+        <div
+          className="map-content--infos" // Ajouter la classe "isVisible" si visible
+          ref={sectionRef} // La référence de cette section
+        >
           <address className="map-content--address">
             <p className="map-content--text">
               4, Chemin de la Touche

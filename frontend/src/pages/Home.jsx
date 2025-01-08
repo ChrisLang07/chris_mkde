@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className="main-title">
             {" "}
             Christophe LANGLOIS | <br />
-            Masseur-kinésithérapeute DE
+            Masseur-kinésithérapeute D.E.
           </h1>
         </div>
         <div id="content-section" className='container'>
