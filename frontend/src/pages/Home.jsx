@@ -19,14 +19,14 @@ export default function Home() {
             Masseur-kinésithérapeute D.E.
           </h1>
         </div>
-        <div id="content-section" className='container'>
+        <div id="content-section" className="container">
           <Content />
           <ContentText />
         </div>
         <div id="map-section">
           <Map />
         </div>
-        <div id="contact-section">
+        <div id="contact-section" className="container">
           <Form />
         </div>
         <BackTotop />
