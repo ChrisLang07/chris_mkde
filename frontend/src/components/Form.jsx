@@ -9,16 +9,52 @@ export default function Form() {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false); // Pour gérer l'état de soumission
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validation simple
+    // Vérification simple des champs requis
     if (!formData.nom || !formData.prenom || !formData.email || !formData.message) {
       alert("Tous les champs sont requis.");
       return;
     }
 
-    console.log("Formulaire soumis:", formData);
+    // Vérifiez si formData contient bien les données avant l'envoi
+    console.log("Données du formulaire avant envoi:", formData);
+
+    setIsSubmitting(true);
+
+    // Utilisation de la variable d'environnement pour l'URL de l'API
+    const apiUrl = process.env.REACT_APP_API_URL;
+
+    // Envoi des données via fetch
+    fetch(apiUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData), // On envoie les données sous forme JSON
+    })
+      .then((response) => response.json()) // On convertit la réponse en JSON
+      .then((data) => {
+        if (data.message) {
+          alert(data.message); // Si la réponse contient un message de succès
+          setFormData({
+            nom: "",
+            prenom: "",
+            email: "",
+            message: "",
+          }); // Réinitialiser le formulaire
+        }
+      })
+      .catch((error) => {
+        console.error("Erreur:", error);
+        alert("Une erreur est survenue lors de l'envoi.");
+      })
+      .finally(() => {
+        setIsSubmitting(false); // On termine la soumission
+      });
   };
 
   const handleChange = (e) => {
@@ -58,7 +94,7 @@ export default function Form() {
         <div className="form-group">
           <label htmlFor="email">E-mail</label>
           <input
-            type="email" // Utilisation du type "email"
+            type="email"
             id="email"
             name="email"
             value={formData.email}
@@ -76,7 +112,16 @@ export default function Form() {
           />
         </div>
 
-        <button type="submit">Envoyer</button>
+        <button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Envoi en cours..." : "Envoyer"}
+        </button>
+
+        {/* Affichage de la barre de progression pendant l'envoi */}
+        {isSubmitting && (
+          <div className="progress-bar-container">
+            <div className="progress-bar"></div>
+          </div>
+        )}
       </form>
     </div>
   );
