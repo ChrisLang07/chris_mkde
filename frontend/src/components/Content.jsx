@@ -11,7 +11,7 @@ export default function Content() {
     const handleScroll = () => {
         if (window.scrollY > lastScroll) {
             setIsScrollingDown(true);
-        } else {
+        } else if (window.scrollY < lastScroll && lastScroll <= window.innerHeight) {
             setIsScrollingDown(false);
         }
         lastScroll = window.scrollY;
