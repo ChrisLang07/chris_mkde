@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Practice from '../assets/images/practice.jpg';
 import Door from '../assets/images/door.jpg';
 import Inside from '../assets/images/inside.jpg';
@@ -6,15 +6,21 @@ import '../assets/scss/components/Content.scss';
 
 export default function Content() {
     const [isScrollingDown, setIsScrollingDown] = useState(false);
-    let lastScroll = 0;
+    const lastScroll = useRef(0);
 
     const handleScroll = () => {
-        if (window.scrollY > lastScroll) {
+        if (window.scrollY > lastScroll.current) {
             setIsScrollingDown(true);
-        } else if (window.scrollY < lastScroll && lastScroll <= window.innerHeight) {
+        } else if (
+          (window.scrollY < lastScroll.current && 
+          lastScroll.current <= window.innerHeight) ||
+          lastScroll.current === 0 ||
+          window.scrollY === 0
+        ) {
             setIsScrollingDown(false);
         }
-        lastScroll = window.scrollY;
+
+        lastScroll.current = window.scrollY;
     };
 
     useEffect(() => {
