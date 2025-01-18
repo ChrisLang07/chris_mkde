@@ -28,7 +28,7 @@ export default function Content() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    });
+    }, []);
 
     return (
       <div className="content">

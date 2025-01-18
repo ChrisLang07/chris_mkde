@@ -19,7 +19,7 @@ export default function BackTotop() {
         return () => {
             window.removeEventListener('scroll', readyToTop);
         }
-    })
+    }, [])
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
