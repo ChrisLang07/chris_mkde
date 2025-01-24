@@ -20,9 +20,6 @@ export default function Form() {
       return;
     }
 
-    // Vérifiez si formData contient bien les données avant l'envoi
-    console.log("Données du formulaire avant envoi:", formData);
-
     setIsSubmitting(true);
 
     // Utilisation de la variable d'environnement pour l'URL de l'API
