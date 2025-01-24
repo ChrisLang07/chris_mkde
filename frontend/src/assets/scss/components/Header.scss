@@ -57,7 +57,11 @@ header {
                     }
 
                     @media(max-width: 768px) {
-                        font-size: 12px;
+                        font-size: 16px;
+                        
+                        &.isScroll {
+                            background-color: rgba(0, 0, 0, 0.4);
+                        }
                     }
                 }
 

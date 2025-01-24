@@ -6,7 +6,6 @@ export default function Footer() {
         <footer>
             <span className='footer-text'>
             © 2025 Christophe LANGLOIS. Tous droits réservés.
-                <span>&#169;</span>
             </span>
         </footer>
     );

@@ -96,27 +96,27 @@ export default function Header() {
                     <nav className={`menu ${isOpen ? "isVisible" : ""}`}>
                         <a
                             href="#home-section"
-                            className={`menu-link ${isActive === "home" ? "active" : ""}`}
+                            className={`menu-link ${isActive === "home" ? "active" : ""} ${isScroll ? "isScroll" : ""}`}
                             onClick={() => handleClickLink("home")}
                         >
                             Home
                         </a>
                         <a
                             href="#content-section"
-                            className={`menu-link ${isActive === "practice" ? "active" : ""}`}
+                            className={`menu-link ${isActive === "practice" ? "active" : ""} ${isScroll ? "isScroll" : ""}`}
                             onClick={() => handleClickLink("practice")}
                         >
                             practice
                         </a>
                         <a href="#map-section"
-                            className={`menu-link ${isActive === "map" ? "active" : ""}`}
+                            className={`menu-link ${isActive === "map" ? "active" : ""} ${isScroll ? "isScroll" : ""}`}
                             onClick={() => handleClickLink("map")}
                         >
                             map
                         </a>
                         <a
                             href="#contact-section"
-                            className={`menu-link ${isActive === "contact" ? "active" : ""}`}
+                            className={`menu-link ${isActive === "contact" ? "active" : ""} ${isScroll ? "isScroll" : ""}`}
                             onClick={() => handleClickLink("contact")}
                         >
                             Contact  
