@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
-import Practice from '../assets/images/practice.jpg';
-import Door from '../assets/images/door.jpg';
-import Inside from '../assets/images/inside.jpg';
+import Practice from '../assets/images/practice.webp';
+import Door from '../assets/images/door.webp';
+import Inside from '../assets/images/inside.webp';
 import { AiOutlineClose } from 'react-icons/ai';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import '../assets/scss/components/Content.scss';
