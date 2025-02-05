@@ -53,7 +53,7 @@ export default function Header() {
         return () => {
             window.removeEventListener('scroll', handleScroll); 
         };
-    }, []); 
+    }); 
     
     const toggleMenu = (event) => {
         event.stopPropagation();  

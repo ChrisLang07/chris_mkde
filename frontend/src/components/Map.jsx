@@ -30,6 +30,9 @@ export default function Map() {
       },
       { threshold: 0.3 } // On déclenche quand 30% de la section est visible
     );
+
+    // Sauvegarder la valeur actuelle de sectionRef.current
+  const currentSectionRef = sectionRef.current;
     
     // Si la référence existe, on commence à observer
     if (sectionRef.current) {
@@ -38,8 +41,8 @@ export default function Map() {
 
     // Nettoyer l'observateur à la fin
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSectionRef) {
+        observer.unobserve(currentSectionRef);
       }
     };
   }, []); // Cette effet se lance une seule fois, au montage du composant
