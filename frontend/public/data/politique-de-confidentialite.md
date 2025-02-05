@@ -1,94 +1,99 @@
 # Politique de confidentialité
 
-**Date de dernière mise à jour :** Janvier 2025
+**Date de dernière mise à jour :** Février 2025
 
-Chez christophe-langlois.onrender.com, nous prenons la protection de vos données personnelles très au sérieux. Cette politique de confidentialité décrit les informations que nous collectons, la manière dont nous les utilisons, les mesures que nous prenons pour les protéger, et les droits dont vous disposez à propos de vos données personnelles.
+Chez Christophe LANGLOIS, masseur-kinésithérapeute, nous prenons la protection de vos données personnelles très au sérieux. Cette politique de confidentialité décrit les informations que nous collectons, la manière dont nous les utilisons, les mesures prises pour les protéger, ainsi que vos droits concernant vos données personnelles.
 
-En utilisant notre site web, nos services ou nos applications, vous acceptez les pratiques décrites dans cette politique.
+En utilisant notre site web, nos services, ou en remplissant notre formulaire de contact, vous acceptez les pratiques décrites dans cette politique.
 
-## 1. Informations collectées
+## 1. Responsable du traitement des données
 
-Nous collectons et traitons différentes catégories de données personnelles lorsque vous interagissez avec notre site ou nos services.
+Le responsable du traitement des données personnelles collectées sur ce site est Christophe LANGLOIS, masseur-kinésithérapeute, exerçant en tant qu'entreprise individuelle, situé à :
 
-### 1.1 Données personnelles fournies directement par vous
+- **Adresse :** 4 Chemin de la Touche, 36000 Châteauroux
+- **Email de contact :** christophe.langlois.mkde@gmail.com
+- **Numéro de téléphone :** 09.54.87.07.13
 
-Lorsque vous vous inscrivez sur notre site, créez un compte, vous abonnez à notre newsletter, ou effectuez une transaction, nous collectons les informations suivantes :
+## 2. Types de données collectées
 
-- **Identifiants personnels** : Nom, prénom, adresse e-mail, numéro de téléphone.
-- **Informations de paiement** : Coordonnées bancaires ou informations de carte de crédit.
-- **Informations relatives à votre compte** : Préférences de compte, historique des achats, etc.
-  
-### 1.2 Données collectées automatiquement
+Nous collectons différentes catégories de données personnelles lorsque vous interagissez avec notre site web ou remplissez notre formulaire de contact.
 
-Lorsque vous accédez à notre site, certaines informations sont collectées automatiquement :
+### 2.1 Données personnelles fournies directement par vous
 
-- **Données de navigation** : Adresse IP, type de navigateur, appareil utilisé, pages consultées, durée de la visite.
-- **Cookies et technologies similaires** : Nous utilisons des cookies pour améliorer votre expérience sur notre site et pour collecter des informations d'analyse sur l'utilisation du site. Vous pouvez gérer les paramètres des cookies dans votre navigateur.
+Lorsque vous remplissez notre formulaire de contact, nous collectons les informations suivantes :
 
-## 2. Utilisation des informations
+- **Identifiants personnels :** Nom, prénom, adresse e-mail, numéro de téléphone.
+- **Informations relatives à votre santé :** Si vous le souhaitez, vous pouvez nous fournir des informations concernant votre état de santé, par exemple pour expliquer la nature de votre demande (par exemple, douleur, besoin de soins spécifiques, etc.).
+- **Raison de votre demande :** Nature de la prise de contact (demande de rendez-vous, renseignement, etc.).
 
-Les informations que nous collectons sont utilisées à des fins spécifiques, notamment :
+### 2.2 Données collectées automatiquement
 
-- **Fournir et gérer nos services** : Vous fournir un accès à notre site, gérer votre compte utilisateur, traiter les transactions et fournir un service client.
-- **Améliorer notre site et nos services** : Analyser la manière dont vous interagissez avec notre site afin d'optimiser l'expérience utilisateur et améliorer les performances du site.
-- **Communication avec vous** : Vous envoyer des communications importantes concernant votre compte, vos achats ou d'autres informations liées à nos services.
-- **Marketing et publicités** : Si vous avez consenti à recevoir des informations marketing, nous vous enverrons des newsletters, des offres spéciales et des promotions personnalisées.
-- **Analyse des performances** : Nous utilisons des outils d'analyse pour mesurer l'efficacité de nos services et publicités, et pour comprendre les besoins des utilisateurs.
+Lors de votre visite sur notre site, certaines informations peuvent être collectées automatiquement via des cookies ou autres technologies similaires. Ces données peuvent inclure :
 
-## 3. Partage de vos informations
+- **Données de navigation :** Adresse IP, type de navigateur, appareil utilisé, pages consultées, durée de la visite.
+- **Cookies et technologies similaires :** Nous utilisons des cookies pour améliorer votre expérience sur notre site et pour analyser l'utilisation du site.
 
-Nous nous engageons à ne pas vendre ou louer vos données personnelles. Cependant, nous pouvons partager vos informations dans les cas suivants :
+## 3. Base juridique du traitement des données
 
-- **Avec nos prestataires de services** : Nous faisons appel à des entreprises tierces pour exécuter certaines fonctions, telles que le traitement des paiements, l'hébergement du site web, ou l'envoi de newsletters. Ces prestataires sont contractuellement tenus de protéger vos données personnelles.
-- **Dans le cadre de la loi** : Nous pouvons divulguer vos informations si la loi l'exige, par exemple pour se conformer à une procédure judiciaire ou pour protéger nos droits, notre propriété, ou notre sécurité.
-  
-## 4. Sécurité de vos données
+Le traitement de vos données personnelles repose sur plusieurs bases légales :
 
-Nous prenons des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles contre tout accès, divulgation, modification ou destruction non autorisés. Nous utilisons des technologies de sécurité telles que le cryptage des données et des pare-feu pour sécuriser les informations sensibles.
+- **Votre consentement :** Lorsque vous remplissez notre formulaire de contact, vous nous donnez votre consentement explicite pour collecter et traiter vos données, y compris celles liées à votre santé, afin de pouvoir vous fournir les services demandés.
+- **Nécessité de traiter des données pour l'exécution d'un contrat :** Si vous prenez un rendez-vous ou demandez des informations liées à nos services, nous traitons vos données pour remplir nos obligations contractuelles.
+- **Obligations légales :** Certaines données peuvent être traitées pour répondre à des obligations légales, par exemple, pour conserver des informations liées à vos soins médicaux.
 
-Cependant, bien que nous fassions de notre mieux pour protéger vos informations, aucune méthode de transmission de données sur Internet n'est totalement sécurisée, et nous ne pouvons garantir une sécurité absolue.
+## 4. Utilisation des données
 
-## 5. Vos droits concernant vos données
+Les données collectées sont utilisées à des fins spécifiques, notamment :
 
-En vertu des lois sur la protection des données, vous avez plusieurs droits concernant vos informations personnelles. Ces droits sont détaillés ci-dessous :
+- **Prendre en charge votre demande :** Répondre à votre demande via le formulaire de contact, prendre un rendez-vous, vous fournir des informations liées à nos services.
+- **Améliorer nos services :** Analyser la manière dont vous interagissez avec notre site pour optimiser l’expérience utilisateur.
+- **Communication avec vous :** Vous envoyer des informations importantes concernant votre prise en charge, vos rendez-vous ou autres éléments relatifs à nos services.
 
-- **Droit d'accès** : Vous pouvez demander à accéder aux informations personnelles que nous détenons à votre sujet.
-- **Droit de rectification** : Vous pouvez demander la correction des informations inexactes ou incomplètes.
-- **Droit à l'effacement (droit à l'oubli)** : Vous pouvez demander la suppression de vos données personnelles sous certaines conditions.
-- **Droit à la portabilité** : Vous avez le droit de recevoir vos données personnelles dans un format structuré, couramment utilisé et lisible par machine, afin de pouvoir les transférer à un autre prestataire.
-- **Droit d'opposition** : Vous pouvez vous opposer au traitement de vos données personnelles pour des raisons légitimes, ou pour les fins de marketing direct.
-- **Droit de retirer votre consentement** : Lorsque le traitement des données repose sur votre consentement, vous pouvez retirer ce consentement à tout moment.
+## 5. Partage de vos informations
 
-Pour exercer ces droits, veuillez nous contacter à l'adresse suivante : [Adresse e-mail de contact].
+Nous nous engageons à ne pas vendre ou louer vos données personnelles. Toutefois, nous pouvons être amenés à partager vos informations dans les cas suivants :
 
-## 6. Cookies et technologies de suivi
+- **Avec des prestataires de services :** Nous faisons appel à des prestataires tiers pour exécuter certaines fonctions, telles que la gestion des rendez-vous, l’hébergement du site web, ou l’envoi de communications électroniques. Ces prestataires sont contractuellement tenus de protéger vos données personnelles.
+- **Dans le cadre de la loi :** Nous pourrions divulguer vos informations si la loi l’exige, par exemple pour respecter une procédure judiciaire ou pour protéger nos droits, notre propriété ou notre sécurité.
 
-Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience sur notre site. Un **cookie** est un petit fichier texte stocké sur votre appareil qui permet de reconnaître votre navigateur et de collecter des informations. Ces informations nous aident à analyser la façon dont vous utilisez notre site, à personnaliser votre expérience et à vous proposer des publicités pertinentes.
+## 6. Sécurité de vos données
 
-Vous pouvez choisir d'accepter ou de refuser les cookies en configurant les paramètres de votre navigateur. Si vous refusez les cookies, certaines fonctionnalités de notre site pourraient ne pas être accessibles.
+Nous mettons en place des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre tout accès non autorisé, divulgation, modification ou destruction. Ces mesures comprennent l’utilisation de technologies telles que le cryptage des données et des pare-feu pour sécuriser les informations sensibles.
 
-Pour plus de détails, consultez notre [politique sur les cookies](lien_vers_la_politique_des_cookies).
+Cependant, bien que nous fassions de notre mieux pour protéger vos informations, aucune méthode de transmission de données sur Internet n’est totalement sécurisée, et nous ne pouvons garantir une sécurité absolue.
 
-## 7. Conservation des données
+## 7. Vos droits concernant vos données
 
-Nous conservons vos données personnelles aussi longtemps que nécessaire pour accomplir les objectifs pour lesquels elles ont été collectées, ou aussi longtemps que la loi l'exige. Si vous souhaitez que nous supprimions vos informations, vous pouvez exercer votre droit à l'effacement comme mentionné ci-dessus.
+En vertu de la législation sur la protection des données personnelles (notamment le RGPD), vous disposez de plusieurs droits concernant vos informations personnelles. Ces droits sont les suivants :
 
-## 8. Modifications de cette politique de confidentialité
+- **Droit d’accès :** Vous avez le droit de demander l'accès aux informations personnelles que nous détenons à votre sujet.
+- **Droit de rectification :** Vous pouvez demander à corriger les informations inexactes ou incomplètes.
+- **Droit à l’effacement (droit à l’oubli) :** Vous pouvez demander la suppression de vos données personnelles sous certaines conditions.
+- **Droit à la portabilité :** Vous avez le droit de recevoir vos données personnelles dans un format structuré, couramment utilisé et lisible par machine, afin de pouvoir les transférer à un autre prestataire.
+- **Droit d’opposition :** Vous pouvez vous opposer au traitement de vos données personnelles pour des raisons légitimes, ou pour des fins de marketing direct.
+- **Droit de retirer votre consentement :** Lorsque le traitement des données repose sur votre consentement, vous pouvez retirer ce consentement à tout moment.
 
-Nous nous réservons le droit de mettre à jour cette politique de confidentialité à tout moment. Si des changements sont apportés, la nouvelle version sera publiée sur cette page avec une date de révision mise à jour. Nous vous encourageons à consulter cette politique régulièrement pour vous tenir informé des modifications éventuelles.
+Pour exercer ces droits, vous pouvez nous contacter à l'adresse suivante : **christophe.langlois.mkde@gmail.com**.
 
-## 9. Contact
+## 8. Cookies et technologies de suivi
 
-Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou la manière dont nous traitons vos données personnelles, veuillez nous contacter à :
+Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience sur notre site et analyser l’utilisation du site. Un cookie est un petit fichier texte stocké sur votre appareil qui permet de reconnaître votre navigateur et de collecter des informations. Ces informations nous aident à analyser la manière dont vous utilisez notre site, à personnaliser votre expérience et à vous proposer des services plus pertinents.
 
-- **Adresse e-mail de contact** : christophe.langlois.mkde@gmail.com
-- **Numéro de téléphone** : 09.54.87.07.13
-- **Adresse physique de l'entreprise** : 4 Chemin de la Touche 36000 Châteauroux
+Vous pouvez choisir d’accepter ou de refuser les cookies en configurant les paramètres de votre navigateur. Si vous refusez les cookies, certaines fonctionnalités de notre site pourraient ne pas être accessibles.
 
----
+## 9. Conservation des données
 
-### Notes :
-1. **Adaptation spécifique** : Ce modèle est un point de départ et devra peut-être être ajusté selon les spécificités de ton entreprise et de ton secteur d'activité. Par exemple, si tu traites des données sensibles, comme des informations médicales, des informations bancaires, ou des données de mineurs, tu devras ajouter des sections spécifiques sur la gestion de ces données.
-2. **Conformité au RGPD** : Si tu es en Europe ou si tu traites les données d'Européens, veille à ce que cette politique soit conforme au **Règlement Général sur la Protection des Données (RGPD)**. Ce règlement impose certaines exigences concernant le consentement, les droits des utilisateurs, la sécurité des données, etc.
-3. **Avis juridique** : Pour t'assurer que cette politique est complète et conforme à la législation en vigueur, il est recommandé de la faire réviser par un avocat spécialisé dans la protection des données.
+Nous conservons vos données personnelles pendant la durée nécessaire à la gestion de votre demande ou pendant la durée nécessaire pour respecter nos obligations légales ou contractuelles. Par exemple, les informations relatives à votre santé pourront être conservées pendant la durée nécessaire aux soins et aux obligations légales associées.
+
+## 10. Modifications de cette politique de confidentialité
+
+Nous nous réservons le droit de mettre à jour cette politique de confidentialité à tout moment. Si des changements sont apportés, la nouvelle version sera publiée sur cette page avec une date de révision mise à jour. Nous vous encourageons à consulter régulièrement cette politique pour vous tenir informé des modifications éventuelles.
+
+## 11. Contact
+
+Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou la manière dont nous traitons vos données personnelles, vous pouvez nous contacter à :
+
+- **Email de contact :** christophe.langlois.mkde@gmail.com
+- **Numéro de téléphone :** 09.54.87.07.13
+- **Adresse physique de l'entreprise :** 4 Chemin de la Touche, 36000 Châteauroux
 

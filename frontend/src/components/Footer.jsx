@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import '../assets/scss/Main.scss';
 import '../assets/scss/components/Footer.scss';
 
@@ -68,13 +69,13 @@ export default function Footer() {
             {isModalOpen && (
                 <>
                     <div 
-                        className="modal-overlay" 
+                        className={`modal-overlay ${isModalOpen ? 'show' : ''}`} 
                         onClick={closeModal} 
                         role="presentation"
                         tabIndex={-1}
                     ></div>
                     <div 
-                        className="footer-modal" 
+                        className={`footer-modal ${isModalOpen ? 'show' : ''}`} 
                         ref={modalRef} 
                         tabIndex={-1}
                         onKeyDown={handleKeyDown}
@@ -95,7 +96,10 @@ export default function Footer() {
                             ) : error ? (
                                 <p>{error}</p>
                             ) : (
-                                <ReactMarkdown>{policyContent}</ReactMarkdown>
+                                <ReactMarkdown
+                                children={policyContent}
+                                remarkPlugins={[remarkGfm]}
+                                />
                             )}
                         </div>
                     </div>
