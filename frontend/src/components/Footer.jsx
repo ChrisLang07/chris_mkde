@@ -1,12 +1,106 @@
+import { useEffect, useState, useRef } from 'react';
+import ReactMarkdown from 'react-markdown';
 import '../assets/scss/Main.scss';
 import '../assets/scss/components/Footer.scss';
 
 export default function Footer() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [policyContent, setPolicyContent] = useState('');
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    const modalRef = useRef(null);
+    const closeButtonRef = useRef(null);
+
+    // Fonction pour fermer la modale
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+    // Gestion de l'appui sur la touche Escape pour fermer la modale
+    const handleKeyDown = (e) => {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    };
+
+    // Charge la politique de confidentialité lors du montage du composant
+    useEffect(() => {
+        const policyUrl = process.env.REACT_APP_URL_POLICY_CONTENT || '/data/politique-de-confidentialite.md';
+        fetch(policyUrl)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Erreur lors du chargement de la politique de confidentialité');
+                }
+                return response.text();
+            })
+            .then((text) => {
+                setPolicyContent(text);
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.error('Erreur de chargement:', error);
+                setError('Impossible de charger la politique de confidentialité.');
+                setLoading(false);
+            });
+    }, []);
+
+    // Focaliser le bouton de fermeture quand la modale est ouverte
+    useEffect(() => {
+        if (isModalOpen) {
+            closeButtonRef.current.focus();
+        }
+    }, [isModalOpen]);
+
     return (
         <footer>
             <span className='footer-text'>
-            © 2025 Christophe LANGLOIS. Tous droits réservés.
+                © 2025 Christophe LANGLOIS. Tous droits réservés |
             </span>
+            <button 
+                className="policy" 
+                onClick={() => setIsModalOpen(true)} 
+                title="Lire notre politique de confidentialité"
+            >
+                Politique de confidentialité
+            </button>
+
+            {isModalOpen && (
+                <>
+                    <div 
+                        className="modal-overlay" 
+                        onClick={closeModal} 
+                        role="presentation"
+                        tabIndex={-1}
+                    ></div>
+                    <div 
+                        className="footer-modal" 
+                        ref={modalRef} 
+                        tabIndex={-1}
+                        onKeyDown={handleKeyDown}
+                    >
+                        <span 
+                            className="close" 
+                            onClick={closeModal}
+                            ref={closeButtonRef}
+                            role="button"
+                            tabIndex="0"
+                        >
+                            &times;
+                        </span>
+                        
+                        <div className="modal-markdown">
+                            {loading ? (
+                                <p>Chargement...</p>
+                            ) : error ? (
+                                <p>{error}</p>
+                            ) : (
+                                <ReactMarkdown>{policyContent}</ReactMarkdown>
+                            )}
+                        </div>
+                    </div>
+                </>
+            )}
         </footer>
     );
 }
