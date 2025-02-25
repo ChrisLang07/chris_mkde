@@ -37,8 +37,8 @@ exports.sendForm = (req, res) => {
     to: process.env.EMAIL_ADMIN, 
     subject: "Nouveau message du formulaire",
     text: `
-            Nom: ${data.nom}  // Changez lastName en nom
-            Prénom: ${data.prenom}  // Changez firstName en prenom
+            Nom: ${data.nom}  
+            Prénom: ${data.prenom}  
             Email: ${data.email}
             Message: ${data.message}
         `
@@ -50,19 +50,19 @@ exports.sendForm = (req, res) => {
     to: data.email,  // L'adresse de l'utilisateur qui soumet le formulaire
     subject: "Confirmation de soumission du formulaire",
     text: `
-            Bonjour ${data.prenom} ${data.nom},  // Changez firstName et lastName en prenom et nom
+            Bonjour ${data.prenom} ${data.nom},  
 
             Merci pour votre message. Voici une copie de celui-ci :
 
-            Prénom: ${data.prenom}  // Changez firstName en prenom
-            Nom: ${data.nom}  // Changez lastName en nom
+            Prénom: ${data.prenom}  
+            Nom: ${data.nom}  
             Email: ${data.email}
             Message: ${data.message}
 
-            Nous vous répondrons dans les plus brefs délais.
+            Je vous répondrai dans les plus brefs délais.
 
             Cordialement,
-            ChrisMKDE
+            Christophe LANGLOIS
         `
   };
 
@@ -91,7 +91,7 @@ exports.sendForm = (req, res) => {
       console.log("Email envoyé à l'utilisateur: " + info.response);
 
       return res.status(200).json({
-        message: "Formulaire soumis avec succès et confirmation envoyée à l'utilisateur !",
+        message: "Formulaire soumis avec succès | Une copie vous a été adressée !",
         data: data,
       });
     });
