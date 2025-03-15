@@ -26,16 +26,39 @@
     -->
     <title>Christophe LANGLOIS | Masseur-kinésithérapeute</title>
 
-    <!-- Google Tag Manager (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MSDXE6DD9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Intégration du JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "Service"],
+        "name": "Christophe LANGLOIS",
+        "description": "Masseur-kinésithérapeute à Châteauroux",
+        "url": "https://christophe-langlois.onrender.com/",
+        "telephone": "+33 9 54 87 07 13",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4 Chemin de la Touche",
+          "addressLocality": "Châteauroux",
+          "postalCode": "36000",
+          "addressCountry": "FR"
+        },
+        "areaServed": "France",
+        "serviceType": "Paramédical"
+      }
+      </script>
 
-      gtag('config', 'G-2MSDXE6DD9');
-    </script>
-    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (gtag.js) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  
+  // Attendre que le consentement soit donné avant d'activer Google Analytics
+  if (localStorage.getItem('cookieConsent') === 'true') {
+    gtag('js', new Date());
+    gtag('config', 'G-2MSDXE6DD9');  // Remplacez par votre ID Google Analytics
+  }
+</script>
+<!-- End Google Tag Manager -->
     
   </head>
   <body>
