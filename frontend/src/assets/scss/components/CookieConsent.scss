@@ -1,0 +1,82 @@
+/* CookieConsent.scss */
+
+/* Bannière */
+.banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+  }
+  
+  /* Texte de la bannière */
+  .text {
+    margin: 0;
+
+    @media(max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  
+  /* Bouton classique (Accepter tous les cookies, etc.) */
+  .button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+
+    @media(max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  
+  /* Bouton de rejet */
+  .buttonReject {
+    background-color: #e74c3c;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  /* Liens dans la bannière */
+  .link {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  /* Modal de personnalisation */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre */
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Contenu du modal */
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Container des cases à cocher */
+  .checkboxContainer {
+    margin: 10px 0;
+  }
+  
