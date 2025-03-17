@@ -1,0 +1,47 @@
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+
+    p, .accept-button, .refuse-button {
+        font-family: "Roboto";
+        font-size: 18px;
+    }
+
+    .cookie-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .cookie-actions {
+        margin-top: 10px;
+
+        .accept-button, .refuse-button, .close-button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .accept-button {
+            background-color: #4CAF50;
+        }
+        
+        .refuse-button {
+            background-color: #f44336;
+        }
+
+        .close-button {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+    }
+}

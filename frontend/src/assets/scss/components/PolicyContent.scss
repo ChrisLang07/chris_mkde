@@ -1,19 +1,33 @@
+.policy {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    color: white;
+
+    @media(max-width: 1024px) {
+        font-size: 18px;
+    }
+
+    @media(max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
 .modal-overlay {
     position: fixed;
-    /* Changez d'absolute à fixed */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    /* Fond semi-transparent */
     z-index: 999;
-    /* Assurez-vous qu'il soit inférieur à la modale */
 }
 
 .policy-modal {
     position: fixed;
-    /* Fixer la modale à la fenêtre */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -60,6 +74,11 @@
     font-size: 1rem;
     max-height: 100%;
     overflow-y: auto;
+    color: black;
+
+    ul {
+        text-align: left;
+    }
 
     @media (max-width: 1024px) {
         font-size: 0.95rem;

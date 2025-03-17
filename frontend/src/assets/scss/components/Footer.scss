@@ -6,8 +6,7 @@ footer {
     padding: 20px 0;
     background: linear-gradient(to right, #414345, #232526);
 
-    .footer-text,
-    .policy {
+    .footer-text {
         font-family: "Bruno Ace SC", serif;
         font-size: 20px;
         color: white;
@@ -19,13 +18,6 @@ footer {
         @media(max-width: 768px) {
             font-size: 16px;
         }
-    }
-
-    .policy {
-        background: none;
-        border: none;
-        text-decoration: underline;
-        cursor: pointer;
     }
 
     @media(max-width: 768px) {

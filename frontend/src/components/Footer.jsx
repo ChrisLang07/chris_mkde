@@ -1,4 +1,4 @@
-import PolicyContent from './PolicyContent'; // Assurez-vous que le chemin d'importation est correct
+import PolicyContent from './PolicyContent'; 
 import '../assets/scss/Main.scss';
 import '../assets/scss/components/Footer.scss';
 
@@ -9,7 +9,7 @@ export default function Footer() {
                 © 2025 Christophe LANGLOIS. Tous droits réservés |
             </span>
 
-            <PolicyContent /> {/* Composant séparé pour la politique de confidentialité */}
+            <PolicyContent />
         </footer>
     );
 }

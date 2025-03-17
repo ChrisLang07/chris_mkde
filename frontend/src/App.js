@@ -10,7 +10,6 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
         </Route>
-        {/* Route pour les pages non trouvées */}
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
