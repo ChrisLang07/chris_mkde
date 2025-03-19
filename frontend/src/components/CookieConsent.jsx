@@ -44,7 +44,12 @@ export default function CookieConsent() {
         }
     };
 
-   return (
+    // Fonction pour fermer la bannière lorsque l'utilisateur clique sur le "X"
+    const closeBanner = () => {
+        setIsCookieBannerVisible(false);
+    };
+
+    return (
         <>
             {isCookieBannerVisible && (
                 <div className="cookie-banner" role="alert" aria-live="assertive">
@@ -56,11 +61,11 @@ export default function CookieConsent() {
                         <div className="cookie-actions">
                             <button onClick={acceptCookies} className="accept-button" aria-label="Accepter les cookies">Accepter les cookies</button>
                             <button onClick={refuseCookies} className="refuse-button" aria-label="Refuser les cookies">Refuser</button>
-                            <CustomizeCookies 
-                                acceptCookies={acceptCookies} 
-                                setIsCookieBannerVisible={setIsCookieBannerVisible}
-                            /> 
+                            <CustomizeCookies /> 
                         </div>
+                        <button onClick={closeBanner} className="close-banner" aria-label="Fermer la bannière des cookies">
+                            &#10005;
+                        </button>
                     </div>
                 </div>
             )}

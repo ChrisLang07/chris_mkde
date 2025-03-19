@@ -23,4 +23,12 @@
     padding: 20px;;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
+
+    .validate-button {
+        font-size: 18px;
+        color: white;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+    }
 }

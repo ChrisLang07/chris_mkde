@@ -17,7 +17,7 @@
     .cookie-content {
         max-width: 800px;
         margin: 0 auto;
-        
+
         p {
             @media(max-width: 768px) {
                 font-size: 14px;
@@ -41,19 +41,31 @@
                 font-size: 14px;
             }
         }
-        
+
         .accept-button {
             background-color: #4CAF50;
         }
-        
+
         .refuse-button {
             background-color: #f44336;
         }
+    }
 
-        .close-button {
-            background-color: transparent;
-            border: 1px solid white;
-            color: white;
-        }
+    // Nouveau style pour le bouton X (fermer)
+    .close-banner {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 40px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    // Effet au survol
+    .close-banner:hover {
+        color: #ccc;  // Change la couleur du X au survol
     }
 }
