@@ -7,6 +7,10 @@
     color: white;
     cursor: pointer;
     background-color: #2196F3;
+
+    @media(max-width: 768px) {
+        font-size: 14px;
+    }
 }
 
 .customize-gtag {

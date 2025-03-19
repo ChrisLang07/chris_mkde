@@ -17,6 +17,12 @@
     .cookie-content {
         max-width: 800px;
         margin: 0 auto;
+        
+        p {
+            @media(max-width: 768px) {
+                font-size: 14px;
+            }
+        }
     }
 
     .cookie-actions {
@@ -30,6 +36,10 @@
             border: none;
             color: white;
             cursor: pointer;
+
+            @media(max-width: 768px) {
+                font-size: 14px;
+            }
         }
         
         .accept-button {
