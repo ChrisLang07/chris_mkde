@@ -38,13 +38,13 @@ export default function CookieConsent() {
     const refuseCookies = () => {
         localStorage.setItem('cookiesAccepted', 'false');
         setIsCookieBannerVisible(false);
-
+        
         if (typeof gtag === 'function') {
             window['ga-disable-G-2MSDXE6DD9'] = true;
         }
     };
 
-    return (
+   return (
         <>
             {isCookieBannerVisible && (
                 <div className="cookie-banner" role="alert" aria-live="assertive">
@@ -56,7 +56,10 @@ export default function CookieConsent() {
                         <div className="cookie-actions">
                             <button onClick={acceptCookies} className="accept-button" aria-label="Accepter les cookies">Accepter les cookies</button>
                             <button onClick={refuseCookies} className="refuse-button" aria-label="Refuser les cookies">Refuser</button>
-                            <CustomizeCookies />
+                            <CustomizeCookies 
+                                acceptCookies={acceptCookies} 
+                                setIsCookieBannerVisible={setIsCookieBannerVisible}
+                            /> 
                         </div>
                     </div>
                 </div>

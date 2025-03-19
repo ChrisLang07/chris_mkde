@@ -20,6 +20,8 @@
     }
 
     .cookie-actions {
+        display: flex;
+        justify-content: center;
         margin-top: 10px;
 
         .accept-button, .refuse-button, .close-button {
