@@ -23,6 +23,12 @@
                 font-size: 14px;
             }
         }
+
+        @media(max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .cookie-actions {
@@ -30,7 +36,7 @@
         justify-content: center;
         margin-top: 10px;
 
-        .accept-button, .refuse-button, .close-button {
+        .accept-button, .refuse-button {
             margin: 0 10px;
             padding: 10px 20px;
             border: none;
@@ -38,6 +44,8 @@
             cursor: pointer;
 
             @media(max-width: 768px) {
+                width: 55%;
+                max-width: 185px;
                 font-size: 14px;
             }
         }
@@ -48,6 +56,13 @@
 
         .refuse-button {
             background-color: #f44336;
+        }
+
+        @media(max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 5px;
         }
     }
 
@@ -62,6 +77,10 @@
         font-size: 40px;
         cursor: pointer;
         transition: color 0.3s ease;
+
+        @media(max-width: 768px) {
+            font-size: 30px;
+        }
     }
 
     // Effet au survol
